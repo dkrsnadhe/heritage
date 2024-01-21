@@ -1,66 +1,55 @@
-## Foundry
+# Heritage Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Description
 
-Foundry consists of:
+The Heritage Smart Contract is a decentralized application (DApp) built on the Ethereum blockchain. It provides a secure and transparent way to manage heritage-related transactions, ensuring a fair distribution of assets according to predefined rules.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Features
 
-## Documentation
+### Main Features
 
-https://book.getfoundry.sh/
+1. **Create Heritage:**
 
-## Usage
+   - Function to create a new heritage with specified details and rules
 
-### Build
+2. **Modify Heritage:**
 
-```shell
-$ forge build
-```
+   - Function to modify an existing heritage
 
-### Test
+3. **Claim Heritage:**
+   - Function for beneficiaries to claim their respective inheritances according to the predefined rules.
 
-```shell
-$ forge test
-```
+### Additional Features
 
-### Format
+1. **Get Heritage ID:**
+   - Function to retrieve the unique identifier (ID) of a heritage, facilitating easy reference and tracking.
 
-```shell
-$ forge fmt
-```
+## Advantages
 
-### Gas Snapshots
+1. **Decentralization:**
 
-```shell
-$ forge snapshot
-```
+   - Utilizes the Ethereum blockchain for transparency, security, and immutability.
 
-### Anvil
+2. **Smart Contract Automation:**
 
-```shell
-$ anvil
-```
+   - Automates heritage management, eliminating the need for intermediaries and reducing the risk of human error.
 
-### Deploy
+3. **Transparent Distribution:**
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+   - Ensures transparent and predefined asset distribution among beneficiaries, reducing disputes and conflicts.
 
-### Cast
+4. **Immutable Record:**
 
-```shell
-$ cast <subcommand>
-```
+   - Once deployed, the contract's state becomes immutable, providing a tamper-proof record of heritage details.
 
-### Help
+5. **Easy Identification:**
+   - Provides a simple method (Get Heritage ID) for users to quickly identify and reference specific heritages.
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## Contract Information
+
+This smart contract has been deployed on Sepolia test network:
+
+- Address: 0x3f21De724cC39D77Dbc25B489A57a66Bb14376Fa
+- Hash : 0x03640572bf7fa32eae7252e547e6d7f0b03917eaa8de1b4eff4677c5e899874a
+
+Access and interact with these smart contract on https://sepolia.etherscan.io/
